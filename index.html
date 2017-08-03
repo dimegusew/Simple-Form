@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>inputForm</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+
+
+<body>
+	<div class="container">
+   <form id="myForm" action="json/success.json">
+			 <div id ="intro">MyForm</div>
+			 <input name= "fio"  id ="fio" placeholder="Ваше ФИО" type = "text"/>
+			 <input name = "email"  id = "email" placeholder="Ваш Email" type = "text"/>
+			 <input name = "phone" id = "telephone" placeholder="Ваш телефон" type = "text"/>
+			 <button type="button" id ="submitButton" onclick = "myForm.submit()"> submit</button>
+			<div id="resultContainer"> </div>
+	</form>
+ </div>
+
+    <script type="text/javascript" src="index.js"></script>
+
+  </body>
