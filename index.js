@@ -32,11 +32,25 @@ var myForm = {
 		}
 		return data;
 	},
+
+    setData: function( obj ){
+        for( var elem in obj ){
+            myForm.inputs.forEach(function( formElem ){
+				if( formElem.name == elem ){
+					console.log(formElem.value)
+                    formElem.value=obj[elem];
+				}
+            });
+        }
+    },
+
+
 	
 	submit: function(){
         if( myForm.validate().isValid ){
 			console.log(myForm.validate())
 			console.log(myForm.getData())
+			//console.log(myForm.setData({ fio: "ns", email: "ferf", phone: "+7(111) 111-11-11" }))
 
 			$('#submitButton').prop('disabled', true);
 
