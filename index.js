@@ -128,7 +128,7 @@ function validPhone(str){
 		var sum = digitArr.reduce(function(x,y){
 			return x+y
 		})
-		if (str.length != 17 || sum>=30){
+		if (str.length != 17 || sum>30){
 			return (false);
 		}
 		else {return true}
